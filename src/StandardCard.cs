@@ -2,8 +2,16 @@
 
 namespace PlayingCardsExtensions
 {
+    /// <summary>
+    /// A standard 52-card deck card / French-suited playing card
+    /// </summary>
     public class StandardCard : Card
     {
+        /// <summary>
+        /// Initialize a standard 52-card deck card / French-suited playing card
+        /// </summary>
+        /// <param name="score"></param>
+        /// <param name="suit"></param>
         public StandardCard(int score, Suit suit)
         {
             Score = score;
@@ -22,6 +30,10 @@ namespace PlayingCardsExtensions
                 : GetScore();
         }
 
+        /// <summary>
+        /// Returns a string with the score value of the card, identifying it by the figure name instead of the number value
+        /// </summary>
+        /// <returns></returns>
         public string GetScore() => Score switch
         {
             0 => "Joker",
