@@ -2,6 +2,10 @@
 {
     public class StandardDeck : Deck<StandardCard>
     {
+        /// <summary>
+        /// Initialize a standard 52-card deck
+        /// </summary>
+        /// <param name="jokers"></param>
         public StandardDeck(bool jokers = false)
         {
             for (int i = 1; i < 5; i++)

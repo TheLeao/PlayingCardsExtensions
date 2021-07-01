@@ -8,7 +8,7 @@ namespace PlayingCardsExtensions
     public class StandardCard : Card
     {
         /// <summary>
-        /// Initialize a standard 52-card deck card / French-suited playing card
+        /// Initialize a standard 52-card deck card / French-suited playing card. Jokers, when any, assume the values of 0 for score and suit.
         /// </summary>
         /// <param name="score"></param>
         /// <param name="suit"></param>
