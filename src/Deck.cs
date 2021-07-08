@@ -23,7 +23,7 @@ namespace PlayingCardsExtensions
             Cards = cards;
         }
 
-        public List<T> Cards { get; }
+        public List<T> Cards { get; protected set; }
 
         /// <summary>
         /// Shuffle the current cards in the deck
