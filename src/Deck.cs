@@ -5,6 +5,16 @@ namespace PlayingCardsExtensions
 {
     public class Deck<T> where T : Card
     {
+        /// <summary>
+        /// Deck is indexed to allow searching and inserting cards by index
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        public Card this[int index]
+        {
+            get => Cards[index];
+            set => Cards[index] = (T)value;
+        }
 
         /// <summary>
         /// Initialize an empty deck of T cards
